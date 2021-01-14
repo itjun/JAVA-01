@@ -280,5 +280,5 @@ Found 1 deadlock.
 ```
 
 6. jstat 统计 idea 的gc情况`jstat -gc -h3 33778 1000 10`
-7. ![jstat](/Users/itjun/iWork/JAVA-01/Week_01/src/homework4/jstat.png)
+7. ![jstat](src/homework4/jstat.png)
 
