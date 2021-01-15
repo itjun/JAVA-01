@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 
 public class HelloClassLoader extends ClassLoader {
 
-    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException,
+    public static void main(String[] args) throws IllegalAccessException,
             InstantiationException, NoSuchMethodException, InvocationTargetException {
         // 获取 Hello 这个类
         Class clazz = new HelloClassLoader().findClass("Hello");
@@ -20,7 +20,7 @@ public class HelloClassLoader extends ClassLoader {
     }
 
     @Override
-    protected Class<?> findClass(String name) throws ClassNotFoundException {
+    protected Class<?> findClass(String name) {
         File file = new File("Hello.xlass");
         byte[] data = new byte[(int) file.length()];
         try {
