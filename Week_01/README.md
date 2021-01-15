@@ -79,9 +79,9 @@ https://app.diagrams.net/
 1. idea 运行一个死锁的 java 进程 [JStackTest.java](src/homework4/JStackTest.java)
 2. 查看当前的java进程ID`jps`
 3. ![jps](src/homework4/jps.png)
-
-4. jmap 在jdk11上没有 jmap -heap [pid] 的选项了，暂不记录，换成Windows的jdk8进行测试。
-5. jstack 查看一个 idea 运行一个死锁的 java 进程`jstack -l 7056 >> jstack.log`
+4. MacOS 的 jmap 命令在jdk11上没有 jmap -heap [pid] 的选项了，换成Windows的jdk8进行测试。
+5. ![image-20210115143922182](src/homework4/jmap.png)
+6. jstack 查看一个 idea 运行一个死锁的 java 进程`jstack -l 7056 >> jstack.log`
 
 ```java
 2021-01-15 01:32:28
