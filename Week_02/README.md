@@ -173,3 +173,17 @@ Running 5m test @ http://127.0.0.1:8088/api/hello
 Requests/sec:  36539.81
 Transfer/sec:      4.36MB
 ```
+
+## HttpClient
+
+nio 练习详见 [homework2](homework2)
+
+Java裸线程-8101-SocketDemo1
+
+![socket-8101](homework2/socket-8101.png)
+
+Netty-8808
+
+![netty-8808](homework2/nettty-8808)
+
+使用netty的性能，QPS远高于Java裸线程。
