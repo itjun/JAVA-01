@@ -1,9 +1,7 @@
 package io.itjun.filter;
 
 import io.netty.handler.codec.http.FullHttpRequest;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class FilterOne implements IFilter {
 
     public FilterOne() {
