@@ -1,4 +1,4 @@
-package io.itjun.week05;
+package io.itjun.week05.xml;
 
 import io.itjun.week05.bean.Student;
 import org.springframework.context.ApplicationContext;
