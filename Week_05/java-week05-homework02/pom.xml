@@ -5,20 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.itjun</groupId>
-    <artifactId>java-week05-homework01</artifactId>
+    <artifactId>java-week05-homework02</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <modules>
+        <module>GeekTimeClass</module>
+        <module>GeekTimeConsumer</module>
+        <module>GeekTimeJdbc</module>
+    </modules>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-            <version>2.4.2</version>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.4.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -31,5 +32,10 @@
             <version>1.18.16</version>
         </dependency>
     </dependencies>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
 </project>
