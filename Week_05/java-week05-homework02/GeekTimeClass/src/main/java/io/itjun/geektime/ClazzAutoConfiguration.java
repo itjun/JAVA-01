@@ -1,4 +1,4 @@
-package pers.peixinyi.geektime;
+package io.itjun.geektime;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

@@ -1,12 +1,14 @@
-package pers.peixinyi.jdbc;
+package io.itjun.jdbc;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 import javax.sql.DataSource;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Objects;
-
 
 public class JdbcUtil {
     public static void main(String[] args) throws SQLException {

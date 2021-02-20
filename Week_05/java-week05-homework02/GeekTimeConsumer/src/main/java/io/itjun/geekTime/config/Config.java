@@ -1,8 +1,7 @@
-package pers.peixinyi.geekTime.config;
+package io.itjun.geekTime.config;
 
+import io.itjun.geektime.Clazz;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import pers.peixinyi.geektime.Clazz;
 
 //@Configuration
 public class Config {

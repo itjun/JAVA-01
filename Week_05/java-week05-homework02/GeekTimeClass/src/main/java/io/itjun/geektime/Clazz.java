@@ -1,4 +1,4 @@
-package pers.peixinyi.geektime;
+package io.itjun.geektime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
-
 
 @AllArgsConstructor
 @NoArgsConstructor

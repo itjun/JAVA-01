@@ -1,8 +1,7 @@
-package pers.peixinyi.jdbc;
+package io.itjun.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 
 public class Student {
 
