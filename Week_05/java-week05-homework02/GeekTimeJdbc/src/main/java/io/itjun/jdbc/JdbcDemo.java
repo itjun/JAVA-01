@@ -7,11 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
 
-/**
- * @author: peixinyi
- * @version: V1.0.0.0
- * @date: 2021-02-18 13:55
- */
 public class JdbcDemo {
     private static String INSERT_SQL = String.format("insert into student (student.id,student.username,student.age)values (%d,'%s',%d);", new Random().nextInt(1000), "itjun", 1);
     private static String SELECT_SQL = "select * from student";
