@@ -14,7 +14,7 @@ public class JdbcDemo {
     private static String DELTER_SQL = "DELETE FROM `week_time`.`student`";
 
     public static void main(String[] args) throws SQLException {
-        JdbcUtil jdbcUtil = new JdbcUtil("jdbc:mysql://localhost:3306/week_time", "root", "123456");
+        JdbcUtil jdbcUtil = new JdbcUtil("jdbc:mysql://localhost:3306/geek_time", "root", "123456");
         Connection connection = jdbcUtil.getHikariDataSource().getConnection();
         Statement statement = connection.createStatement();
 //        Integer rs = statement.executeUpdate(INSERT_SQL);

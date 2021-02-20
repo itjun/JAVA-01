@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Bean;
 public class Config {
     @Bean
     public Clazz clazz() {
-        return new Clazz("一班", 45);
+        return new Clazz("3班", 45);
     }
 }
