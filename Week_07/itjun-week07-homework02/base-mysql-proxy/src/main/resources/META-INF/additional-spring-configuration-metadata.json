@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "datasource.slaves",
+      "type": "java.lang.String",
+      "description": "Description for datasource.slaves."
+    },
+    {
+      "name": "datasource.master.password",
+      "type": "java.lang.String",
+      "description": "Description for datasource.master.password."
+    }
+  ]
+}
