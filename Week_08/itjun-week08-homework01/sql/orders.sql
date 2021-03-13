@@ -1,0 +1,17 @@
+create table `t_order0` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order1` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order2` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order3` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order4` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order5` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order6` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order7` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order8` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order9` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '')engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order10` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order11` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order12` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order13` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order14` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order15` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
+create table `t_order16` (`user_id` int default null,`order_id` int default null,`note` varchar(10) default '') engine=innodb default charset=utf8mb4 collate=utf8mb4_0900_ai_ci;
