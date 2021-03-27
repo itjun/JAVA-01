@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.itjun.account.mapper.FreezeMoneyMapper">
+    <resultMap id="BaseResultMap" type="io.itjun.account.FreezeMoney">
+        <!--@mbg.generated-->
+        <!--@Table freeze_money-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="order_id" jdbcType="INTEGER" property="orderId"/>
+        <result column="currency" jdbcType="INTEGER" property="currency"/>
+        <result column="currency_type" jdbcType="INTEGER" property="currencyType"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="create_time" jdbcType="INTEGER" property="createTime"/>
+        <result column="update_time" jdbcType="INTEGER" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, user_id, order_id, currency, currency_type, `status`, create_time, update_time
+    </sql>
+    <select id="getFreezeMoney" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+
+        <include refid="Base_Column_List"/>
+
+        from freeze_money
+        where user_id = #{userID,jdbcType=INTEGER} and order_id = #{orderID,jdbcType=INTEGER} and status!= -99
+
+    </select>
+    <insert id="addFreezeMoney" keyColumn="id" keyProperty="id" parameterType="io.itjun.account.FreezeMoney"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into freeze_money
+
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+
+            </if>
+            <if test="orderId != null">
+
+                order_id,
+
+            </if>
+            <if test="currency != null">
+
+                currency,
+
+            </if>
+            <if test="currencyType != null">
+
+                currency_type,
+
+            </if>
+            <if test="status != null">
+
+                `status`,
+
+            </if>
+            <if test="createTime != null">
+
+                create_time,
+
+            </if>
+            <if test="updateTime != null">
+
+                update_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+
+            </if>
+            <if test="orderId != null">
+
+                #{orderId,jdbcType=INTEGER},
+
+            </if>
+            <if test="currency != null">
+
+                #{currency,jdbcType=INTEGER},
+
+            </if>
+            <if test="currencyType != null">
+
+                #{currencyType,jdbcType=INTEGER},
+
+            </if>
+            <if test="status != null">
+
+                #{status,jdbcType=INTEGER},
+
+            </if>
+            <if test="createTime != null">
+
+                #{createTime,jdbcType=INTEGER},
+
+            </if>
+            <if test="updateTime != null">
+
+                #{updateTime,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateFreezeMoneyStatus" parameterType="io.itjun.account.FreezeMoney">
+        <!--@mbg.generated-->
+        update freeze_money
+        set `status` = #{status,jdbcType=INTEGER}
+        where user_id = #{userID,jdbcType=INTEGER} and order_id = #{orderID,jdbcType=INTEGER}
+
+    </update>
+</mapper>

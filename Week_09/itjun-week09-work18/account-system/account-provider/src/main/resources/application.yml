@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    db0:
+      jdbcUrl: jdbc:mysql://192.168.10.155:3356/db0
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db1:
+      jdbcUrl: jdbc:mysql://192.168.10.155:3356/db1
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: account-system
+dubbo:
+  application:
+    name: account-system
+    version: 1.0.0.0
+  registry:
+    address: nacos://192.168.10.155:8848
+  protocol:
+    name: dubbo
+    port: -1
+  consumer:
+    timeout: 3000
+  scan:
+    base-packages: pers.peixinyi.account.service
