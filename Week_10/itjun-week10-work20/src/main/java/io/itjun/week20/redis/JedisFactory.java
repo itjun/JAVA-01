@@ -46,8 +46,8 @@ public class JedisFactory {
         // evitor扫描并驱逐；这一项只有在timeBetweenEvictionRunsMillis大于0时才有意义
         pool.setMinEvictableIdleTimeMillis(60000);
 
-        String host =  "127.0.0.1";
-        int port = 6379 ;
+        String host = "127.0.0.1";
+        int port = 6379;
         String password = "";
 
         int timeout = (10000);
